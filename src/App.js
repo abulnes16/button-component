@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Container from "./styled-components/Container";
+import Subtitle from "./styled-components/Subtitle";
+import Title from "./styled-components/Title";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <img src="assets/img/devchallenges.png" alt="Dev challenge logo" />
+      <Title>Dev Challenge Design System</Title>
+      <Subtitle>Buttons</Subtitle>
+    </Container>
   );
 }
 
