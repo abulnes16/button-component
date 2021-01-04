@@ -4,8 +4,8 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 2em 4em;
+  flex-direction: ${(props) => props.direction || "row"};
+  padding: ${(props) => props.padding};
 `;
 
 export default Container;
