@@ -73,6 +73,6 @@ $ npm start
 
 ## Contact
 
-- Website [your-website.com](https://abulnes16.dev)
-- GitHub [@your-username](https://github.com/abulnes16)
-- Twitter [@your-twitter](https://twitter.com/abulnes16)
+- Website [abulnes16.dev](https://abulnes16.dev)
+- GitHub [@abulnes16](https://github.com/abulnes16)
+- Twitter [@abulnes16](https://twitter.com/abulnes16)
