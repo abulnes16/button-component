@@ -1,7 +1,7 @@
 /* App component */
 
 // Styles
-import "./App.css";
+import "./App.scss";
 
 // Styled componentes
 import Container from "./styled-components/Container";
@@ -10,7 +10,7 @@ import Logo from "./styled-components/Logo";
 import Title from "./styled-components/Title";
 import GridContainer from "./styled-components/GridContainer";
 import GridCell from "./styled-components/GridCell";
-import Button from "./styled-components/Button";
+import Button from "./components/button/Button";
 import ButtonTitle from "./styled-components/ButtonTitle";
 import ButtonHeader from "./styled-components/ButtonHeader";
 
@@ -34,12 +34,12 @@ function App() {
               <Button>Default</Button>
             </Container>
             <Container direction="column">
-              <ButtonTitle>{"<Button outline />"}</ButtonTitle>
-              <Button outline>Default</Button>
+              <ButtonTitle>{"<Button variant='outline' />"}</ButtonTitle>
+              <Button variant="outline">Default</Button>
             </Container>
             <Container direction="column">
-              <ButtonTitle>{"<Button text />"}</ButtonTitle>
-              <Button text>Default</Button>
+              <ButtonTitle>{"<Button variant='text' />"}</ButtonTitle>
+              <Button variant="text">Default</Button>
             </Container>
           </GridContainer>
         </GridCell>
@@ -48,12 +48,7 @@ function App() {
           <GridContainer rows="1fr" columns="repeat(3, 1fr)">
             <Container direction="column">
               <ButtonTitle>{"<Button disableShadow/>"}</ButtonTitle>
-              <Button
-                hoverColor="#0039CB"
-                bgColor="#3D5AFE"
-                color="white"
-                disableShadow
-              >
+              <Button color="primary" disableShadow="disableShadow">
                 Default
               </Button>
             </Container>
@@ -62,8 +57,8 @@ function App() {
               <Button disabled>Default</Button>
             </Container>
             <Container direction="column">
-              <ButtonTitle>{"<Button disabled text/>"}</ButtonTitle>
-              <Button disabled text>
+              <ButtonTitle>{"<Button disabled variant='text'/>"}</ButtonTitle>
+              <Button disabled variant="text">
                 Default
               </Button>
             </Container>
@@ -74,31 +69,31 @@ function App() {
           <GridContainer rows="1fr" columns="repeat(5, 1fr)" gap="40px">
             <Container direction="column">
               <ButtonTitle>{"<Button startIcon={<More/>} />"}</ButtonTitle>
-              <Button type="primary" startIcon={<More />}>
+              <Button color="primary" startIcon={<More />}>
                 Default
               </Button>
             </Container>
             <Container direction="column">
               <ButtonTitle>{"<Button startIcon={<Alarm/>} />"}</ButtonTitle>
-              <Button type="primary" startIcon={<Alarm />}>
+              <Button color="primary" startIcon={<Alarm />}>
                 Default
               </Button>
             </Container>
             <Container direction="column">
               <ButtonTitle>{"<Button endIcon={<Home/>} />"}</ButtonTitle>
-              <Button type="primary" endIcon={<Home />}>
+              <Button color="primary" endIcon={<Home />}>
                 Default
               </Button>
             </Container>
             <Container direction="column">
               <ButtonTitle>{"<Button endIcon={<Android/>} />"}</ButtonTitle>
-              <Button type="primary" endIcon={<Android />}>
+              <Button color="primary" endIcon={<Android />}>
                 Default
               </Button>
             </Container>
             <Container direction="column">
               <ButtonTitle>{"<Button endIcon={<Face/>} />"}</ButtonTitle>
-              <Button type="primary" endIcon={<Face />}>
+              <Button color="primary" endIcon={<Face />}>
                 Default
               </Button>
             </Container>
@@ -109,19 +104,19 @@ function App() {
           <GridContainer rows="1fr" columns="repeat(3, 1fr)" gap="40px">
             <Container direction="column">
               <ButtonTitle>{"<Button size='sm' />"}</ButtonTitle>
-              <Button type="primary" size="sm">
+              <Button color="primary" size="sm">
                 Default
               </Button>
             </Container>
             <Container direction="column">
               <ButtonTitle>{"<Button size='md' />"}</ButtonTitle>
-              <Button type="primary" size="md">
+              <Button color="primary" size="md">
                 Default
               </Button>
             </Container>
             <Container direction="column">
               <ButtonTitle>{"<Button size='lg' />"}</ButtonTitle>
-              <Button type="primary" size="lg">
+              <Button color="primary" size="lg">
                 Default
               </Button>
             </Container>
@@ -132,19 +127,19 @@ function App() {
           <GridContainer rows="1fr" columns="repeat(4, 1fr)" gap="40px">
             <Container direction="column">
               <ButtonTitle>{"<Button type='default' />"}</ButtonTitle>
-              <Button type="default">Default</Button>
+              <Button color="default">Default</Button>
             </Container>
             <Container direction="column">
-              <ButtonTitle>{"<Button type='primary' />"}</ButtonTitle>
-              <Button type="primary">Primary</Button>
+              <ButtonTitle>{"<Button color='primary' />"}</ButtonTitle>
+              <Button color="primary">Primary</Button>
             </Container>
             <Container direction="column">
-              <ButtonTitle>{"<Button type='secondary' />"}</ButtonTitle>
-              <Button type="secondary">Secondary</Button>
+              <ButtonTitle>{"<Button color='secondary' />"}</ButtonTitle>
+              <Button color="secondary">Secondary</Button>
             </Container>
             <Container direction="column">
-              <ButtonTitle>{"<Button type='danger' />"}</ButtonTitle>
-              <Button type="danger">Danger</Button>
+              <ButtonTitle>{"<Button color='danger' />"}</ButtonTitle>
+              <Button color="danger">Danger</Button>
             </Container>
           </GridContainer>
         </GridCell>

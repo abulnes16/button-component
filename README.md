@@ -37,7 +37,7 @@
 
 ## Overview
 
-<img src="assets/site.png"/>
+<img src="img/site.png"/>
 
 This project showcase a button component with default styles and different types to be used in a site. I created this component to test the library styled-components which is very popular to handle dynammic styling in React.
 

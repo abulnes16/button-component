@@ -1,0 +1,113 @@
+/* Default Variables */
+$color-default: #e0e0e0;
+$color-font: #333;
+$box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+$color-hover: #aeaeae;
+
+/* Outline variables */
+$color-outline: #3d5afe;
+$color-outline-hover: rgba(41, 98, 255, 0.1);
+
+/* Colors variables */
+$color-primary: #2962ff;
+$color-primary-hover: #0039cb;
+$color-secondary: #455a64;
+$color-secondary-hover: #1c313a;
+$color-danger: #d32f2f;
+$color-danger-hover: #9a0007;
+
+/* Disable styles */
+$color-disabled: #9e9e9e;
+
+/* Button sizes */
+$padding-sm: 0.6em 0.8em;
+$padding-lg: 1em 1.4em;
+$padding-md: 0.8em 1.2em;
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  padding: $padding-md;
+  background-color: $color-default;
+  box-shadow: $box-shadow;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+}
+
+.outline {
+  border: 1px solid $color-outline;
+  color: $color-outline;
+  background-color: transparent;
+}
+
+.text {
+  background-color: transparent;
+  color: $color-outline;
+  box-shadow: none;
+}
+
+.outline,
+.text {
+  &:hover,
+  &:focus {
+    background-color: $color-outline-hover;
+  }
+}
+
+.disabled {
+  color: $color-disabled;
+}
+
+.primary {
+  background: $color-primary;
+  color: white;
+  &:hover,
+  &:focus {
+    background: $color-primary-hover;
+  }
+}
+
+.secondary {
+  background: $color-secondary;
+  color: white;
+  &:hover,
+  &:focus {
+    background: $color-secondary-hover;
+  }
+}
+
+.danger {
+  background: $color-danger;
+  color: white;
+  &:hover,
+  &:focus {
+    background: $color-danger-hover;
+  }
+}
+
+.sm {
+  padding: $padding-sm;
+}
+
+.lg {
+  padding: $padding-lg;
+}
+
+.startIcon {
+  margin-right: 5px;
+}
+
+.endIcon {
+  margin-left: 5px;
+}
+
+.disableShadow {
+  box-shadow: none;
+}
