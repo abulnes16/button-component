@@ -1,15 +1,14 @@
 /* Button custom component
   A custom button with default styles 
   props: 
-    - color: Indicates the text color of the button
-    - bgColor: Indicates the background color of the button
+    - color: Indicates the color of the button, this styles are: 
+      [primary, secondary, default, danger]
     - size: Indicates the size of the button
-    - text: Apply text styles to the button
-    - outline: Apply outline styles to the button
+    - variant: Apply styles to the button this styles are: 
+      -"text": Render a button with text
+      -"outline": Render a button with border and no background
     - disabled: Apply disabled styles to the button and disable it
     - disableShadow: Disable the box shadow of the button 
-    - type: Indicates the style types of the button, current are: 
-            [primary, secondary, default, danger]
     - startIcon: Put an icon at the start of the button text
     - endIcon: Put an icon at the end of the button text
 

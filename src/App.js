@@ -126,7 +126,7 @@ function App() {
           <ButtonHeader>Button colors</ButtonHeader>
           <GridContainer rows="1fr" columns="repeat(4, 1fr)" gap="40px">
             <Container direction="column">
-              <ButtonTitle>{"<Button type='default' />"}</ButtonTitle>
+              <ButtonTitle>{"<Button color='default' />"}</ButtonTitle>
               <Button color="default">Default</Button>
             </Container>
             <Container direction="column">
