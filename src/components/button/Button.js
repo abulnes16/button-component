@@ -20,23 +20,22 @@ import React from "react";
 
 import "./button.scss";
 
-const Button = ({
-  variant = "",
-  disableShadow = "",
-  size = "",
-  color = "",
-  disabled,
-  startIcon,
-  endIcon,
-  children,
-  onClick,
-}) => {
-  console.log(disableShadow);
+const Button = (props) => {
+  const {
+    variant = "",
+    disableShadow = "",
+    size = "",
+    color = "",
+    disabled,
+    startIcon,
+    endIcon,
+    children,
+  } = props;
   return (
     <button
       className={`btn ${variant} ${disableShadow} ${size} ${color} `}
       disabled={disabled}
-      onClick={onClick}
+      {...props}
     >
       <div className="startIcon">{startIcon && startIcon}</div>
       {children}
