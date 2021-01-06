@@ -13,6 +13,7 @@ import GridCell from "./styled-components/GridCell";
 import Button from "./styled-components/Button";
 import ButtonTitle from "./styled-components/ButtonTitle";
 import ButtonHeader from "./styled-components/ButtonHeader";
+import Footer from './styled-components/Footer';
 
 //Icons
 import { More, Home, Alarm, Android, Face } from "@material-ui/icons";
@@ -149,6 +150,7 @@ function App() {
           </GridContainer>
         </GridCell>
       </GridContainer>
+      <Footer>Angel Bulnes (@abulnes16) @ DevChallenges.io</Footer>
     </Container>
   );
 }
